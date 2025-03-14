@@ -7,19 +7,16 @@ type: bug
 assignees: ''
 
 ---
-## Is there an existing issue for this?
-  - [ ] I have searched the existing issues
-
 ## Describe the bug
 
 
 ## Steps To Reproduce
 
 
-## Exceptions (if any)
+## Proposed Solution
 
 
-## Afected versions (if any)
+## Affected versions (if any)
 
 
 ## Anything else?
