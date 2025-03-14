@@ -7,19 +7,19 @@ type: bug
 assignees: ''
 
 ---
-# Is there an existing issue for this?
+## Is there an existing issue for this?
   - [] I have searched the existing issues
 
-# Describe the bug
+## Describe the bug
 
 
-# Steps To Reproduce
+## Steps To Reproduce
 
 
-# Exceptions (if any)
+## Exceptions (if any)
 
 
-# Afected versions (if any)
+## Afected versions (if any)
 
 
-# Anything else?
+## Anything else?
