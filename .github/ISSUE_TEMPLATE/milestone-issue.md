@@ -3,11 +3,12 @@ name: Milestone Issue
 about: Describe this issue template's purpose here.
 title: "[Milestone] <Version> Release"
 labels: milestone
+type: milestone
 assignees: ''
 
 ---
 
-This issue tracks the features and issues to be present in the <Version>release
+This issue tracks the features and issues to be present in the <Version> release
 
 ## Release Description
 
