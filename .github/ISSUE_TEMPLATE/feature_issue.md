@@ -1,19 +1,12 @@
 ---
-name: Feature Issue
-about: Describes a feature.
+name: Feature Milestone Issue
+about: Describes a feature milestone (a set of features).
 title: "[Feature] "
 labels: feature
 type: feature
 assignees: ''
 
 ---
-## Background and Motivation
-
-
 ## Feature Description
 
 
-## Proposed Api
-
-
-## Alternate Designs
