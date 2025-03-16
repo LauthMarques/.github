@@ -1,6 +1,6 @@
 ---
 name: Milestone Issue
-about: Describe this issue template's purpose here.
+about: Describes a milestone. A milestone can be a version or a specific feature.
 title: "[Milestone] <Version> Release"
 labels: milestone
 type: milestone
