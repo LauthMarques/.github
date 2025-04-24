@@ -16,8 +16,6 @@ Target Version: `<Version>`
 
 Expected Release Date: `-`
 
-## Milestone Issues
-<Add a link to the filtered milestone issues>
-
-## Project View
-<Add a link to the github project>
+## Views
+[Milestone Issues](<Add a link to the filtered milestone issues>)
+[Project View](<Add a link to the github project>)
