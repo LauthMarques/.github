@@ -17,5 +17,8 @@ Target Version: `<Version>`
 Expected Release Date: `-`
 
 ## Views
-[Milestone Issues](<Add a link to the filtered milestone issues>)
-[Project View](<Add a link to the github project>)
+[Milestone Issues](https://github.com/LauthMarques/<repo_name>/issues?q=is%3Aissue%20milestone%3A<milestone>)
+
+[Milestone PRs](https://github.com/LauthMarques/<repo_name>/issues?q=is%3Apr%20milestone%3A<milestone>)
+
+[Project View](https://github.com/orgs/LauthMarques/projects/<project_number>)
