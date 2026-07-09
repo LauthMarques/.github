@@ -33,6 +33,24 @@ body:
     validations:
       required: false
 
+  - type: textarea
+    id: affected-repos
+    attributes:
+      label: Affected repos
+      description: >-
+        Paste the full URL of each repo this touches (e.g.
+        https://github.com/org/repo-a) — GitHub only auto-links full URLs,
+        not plain "org/repo" text, and there's no @-mention for
+        repositories (@ is people/teams only). If this lists more than one
+        repo, the resulting RFC likely belongs in the platform hub repo,
+        not here — rfc-draft will ask about this when promoting the
+        discussion.
+      placeholder: |
+        https://github.com/org/repo-a
+        https://github.com/org/repo-b
+    validations:
+      required: false
+
   - type: dropdown
     id: scope
     attributes:
