@@ -1,0 +1,53 @@
+title: "[Proposal] "
+labels: ["proposal"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this discussion to propose a change **before** it becomes an
+        RFC. The goal here is to validate whether the idea is worth the
+        effort of becoming a technical document. Keep it brief — detail
+        belongs in the RFC, if the proposal survives.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem / motivation
+      description: What pain is being solved? What happens if we do nothing?
+    validations:
+      required: true
+
+  - type: textarea
+    id: idea
+    attributes:
+      label: Proposed idea (high level)
+      description: Sketch of the solution. No implementation detail needed.
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: What else was thought about and why it wasn't chosen.
+    validations:
+      required: false
+
+  - type: dropdown
+    id: scope
+    attributes:
+      label: Estimated scope
+      options:
+        - Small (a few days)
+        - Medium (1-2 weeks)
+        - Large (needs to be broken into phases)
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        **Next step:** if the proposal gains traction here, promote it to a
+        formal RFC in `docs/rfcs/` using the RFC template, referencing this
+        discussion as its origin.

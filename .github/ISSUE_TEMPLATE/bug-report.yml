@@ -1,0 +1,74 @@
+name: "Bug report"
+description: "Something isn't working as expected. Skips the RFC flow entirely — bugs go straight to implement-issue, no RFC required."
+title: "[Bug] "
+labels: ["type:bug"]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened
+      description: A clear description of the bug.
+    validations:
+      required: true
+
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to reproduce
+      value: |
+        1.
+        2.
+        3.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
+
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      placeholder: "e.g. prod, uat, local; version/commit if known"
+    validations:
+      required: false
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs / screenshots
+      description: Paste relevant logs or attach screenshots. Redact secrets first.
+    validations:
+      required: false
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Suggested priority
+      description: Final priority is set during triage, not by the reporter.
+      options:
+        - priority:low
+        - priority:medium
+        - priority:high
+        - priority:urgent
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        No RFC needed for bug fixes. Once triaged (`issues-triage` will
+        mark it `triage:valid` or close it if it's a duplicate/invalid/
+        already fixed), a valid bug goes straight to `implement-issue`.

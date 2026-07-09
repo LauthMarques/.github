@@ -1,0 +1,69 @@
+name: "RFC task"
+description: "Issue generated from an accepted RFC — usually created by the plan skill, but can be filled in manually."
+title: "[RFC-NNNN] "
+labels: ["type:rfc-task"]
+body:
+  - type: input
+    id: rfc
+    attributes:
+      label: Source RFC
+      description: "Link or number, e.g. docs/rfcs/0007-new-feature.md"
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Context and goal
+      description: What this issue delivers, within the RFC's broader goal.
+    validations:
+      required: true
+
+  - type: textarea
+    id: files
+    attributes:
+      label: Affected files / components
+    validations:
+      required: false
+
+  - type: textarea
+    id: criteria
+    attributes:
+      label: Acceptance criteria
+      description: Derived directly from the RFC's acceptance criteria — don't invent new ones here.
+      value: |
+        - [ ]
+    validations:
+      required: true
+
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Dependencies
+      description: Other issues that need to be completed before this one.
+    validations:
+      required: false
+
+  - type: dropdown
+    id: effort
+    attributes:
+      label: Effort
+      options:
+        - effort:low
+        - effort:medium
+        - "effort:high (must be broken down before it enters execution)"
+        - "effort:very-high (must be broken down before it enters execution)"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      options:
+        - priority:low
+        - priority:medium
+        - priority:high
+        - priority:urgent
+    validations:
+      required: true
