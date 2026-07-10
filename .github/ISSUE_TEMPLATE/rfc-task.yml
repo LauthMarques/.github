@@ -1,13 +1,13 @@
 name: "RFC task"
 description: "Issue generated from an accepted RFC — usually created by the plan skill, but can be filled in manually."
 title: "[RFC-NNNN] "
-labels: ["type:rfc-task"]
+type: Task
 body:
   - type: input
     id: rfc
     attributes:
       label: Source RFC
-      description: "Link or number, e.g. docs/rfcs/0007-new-feature.md"
+      description: "Number, e.g. RFC-0007 (lives in the hub repo — see CLAUDE.md's \"RFC hub repo\")"
     validations:
       required: true
 
@@ -39,8 +39,13 @@ body:
   - type: textarea
     id: dependencies
     attributes:
-      label: Dependencies
-      description: Other issues that need to be completed before this one.
+      label: Dependencies (context)
+      description: >-
+        Why this depends on other issues, for human readers. This is not
+        what worklist reads to build the execution order — the actual link
+        is GitHub's native issue dependencies (Relationships sidebar, or
+        `gh issue edit --add-blocked-by`), which plan/implement-issue set
+        directly. Use this field to explain the *why*.
     validations:
       required: false
 

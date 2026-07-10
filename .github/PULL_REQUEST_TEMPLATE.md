@@ -1,7 +1,7 @@
 ## RFC / Issue
 
-- RFC: `docs/rfcs/NNNN-title.md`
-- Closes #
+- RFC: `RFC-NNNN` (from the hub repo — see CLAUDE.md's "RFC hub repo")
+- Closes #<!-- same-repo issue: `Closes #123`. Cross-repo issue: `Closes org/repo#123` — a bare `#123` does NOT close an issue in another repo. Also confirm this PR targets the default branch; closing keywords are silently ignored otherwise. -->
 
 ## What changed
 
@@ -28,13 +28,7 @@ Manual steps or the relevant automated test command.
 
 ## Automated review
 
-Before human review, run the `pr-review` skill to check the diff against
-the RFC and paste the result below (optional, but recommended for large
-PRs or RFCs with many acceptance criteria).
-
-<details>
-<summary>Automated review result</summary>
-
-<!-- paste here -->
-
-</details>
+Before requesting human review, run `pr-review` (RFC conformance) and
+optionally `code-review` (general code quality). Both post their reviews
+directly to this PR as inline comments plus a decision — nothing to paste
+here. Check the Reviews section above for their verdicts before merging.

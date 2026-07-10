@@ -1,7 +1,7 @@
 name: "Bug report"
 description: "Something isn't working as expected. Skips the RFC flow entirely — bugs go straight to implement-issue, no RFC required."
 title: "[Bug] "
-labels: ["type:bug"]
+type: Bug
 body:
   - type: textarea
     id: description

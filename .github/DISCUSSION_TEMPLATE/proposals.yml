@@ -33,6 +33,19 @@ body:
     validations:
       required: false
 
+  - type: input
+    id: project
+    attributes:
+      label: Primary project
+      description: >-
+        Which project this mainly belongs to (see docs/rfcs/PROJECTS.md
+        for the current list — ci, auth, infra-staging,
+        infra-production, cloud, application, ...). If none fit, say so;
+        rfc-draft will confirm before creating a new one.
+      placeholder: "e.g. auth"
+    validations:
+      required: false
+
   - type: textarea
     id: affected-repos
     attributes:
@@ -41,10 +54,9 @@ body:
         Paste the full URL of each repo this touches (e.g.
         https://github.com/org/repo-a) — GitHub only auto-links full URLs,
         not plain "org/repo" text, and there's no @-mention for
-        repositories (@ is people/teams only). If this lists more than one
-        repo, the resulting RFC likely belongs in the platform hub repo,
-        not here — rfc-draft will ask about this when promoting the
-        discussion.
+        repositories (@ is people/teams only). This is what plan actually
+        uses to create milestones/issues — can be a subset of the
+        project's usual repos, not necessarily all of them.
       placeholder: |
         https://github.com/org/repo-a
         https://github.com/org/repo-b
